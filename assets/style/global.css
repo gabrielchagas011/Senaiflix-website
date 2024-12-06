@@ -11,7 +11,7 @@
 }
 
 /* Define o estilo para o elemento <header>. */
-header {
+.cabecalho {
     width: 100%; /* Faz o header ocupar toda a largura da tela. */
     background-color: black; /* Define a cor de fundo inicial como preto. */
     padding: 15px; /* Adiciona um espaço interno de 15px em todas as direções. */
@@ -26,7 +26,7 @@ header {
 }
 
 /* Estiliza o elemento <span> dentro do header. */
-header span {
+.cabecalho span {
     color: white; /* Define a cor do texto como branca. */
     padding-left: 70px;
 }
@@ -38,7 +38,7 @@ header span {
 }
 
 /* Estiliza os links <a> dentro do <nav> do header. */
-header nav a {
+.cabecalho nav a {
     color: white; /* Define a cor do texto do link como branca. */
     text-decoration: none; /* Remove o sublinhado dos links. */
     margin-left: 10px; /* Adiciona uma margem esquerda de 10px entre os links. */
@@ -627,7 +627,38 @@ footer .icons-container  img{
 
     }
 
+    .cabecalho {
+
+        display: none;
+
+    }  
+    
+    #cabecalho-mobile {
+
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        z-index: 2;
+
+    }
+
+    #cabecalho-mobile nav {
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 20vh;
+        padding-left: 15px;
+
+    }
+
+    #cabecalho-mobile nav a {
+
+        color: white;
+        font-size: 4em;
+        margin-bottom: 48px;
+
+    }
 
 
-
-   }
+       }
